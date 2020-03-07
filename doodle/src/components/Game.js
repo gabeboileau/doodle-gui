@@ -3,11 +3,11 @@ import React from "react";
 import { Player } from "./Player";
 import { Canvas } from "./Canvas";
 
-import { PlayerContainer } from "./common-game";
+import { PlayerContainer, GameContainer } from "./common-game";
 
 export function Game(props) {
   return (
-    <div className="Game">
+    <GameContainer>
       <PlayerContainer>
         <Player></Player>
         <Player></Player>
@@ -15,6 +15,6 @@ export function Game(props) {
         <Player></Player>
       </PlayerContainer>
       <Canvas></Canvas>
-    </div>
+    </GameContainer>
   );
 }

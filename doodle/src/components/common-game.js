@@ -1,11 +1,13 @@
 import styled from "styled-components";
 
+export const GameContainer = styled.div`
+  display: flex;
+  justify-content: center;
+`;
+
 export const PlayerCard = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  justify-items: center;
-  align-content: center;
   margin: 5px;
   padding: 10px;
   border: thin solid black;
@@ -23,16 +25,14 @@ export const CanvasContainer = styled.div`
   display: flex;
   width: 700px;
   height: 500px;
-  padding: 20px;
-  margin: 5px;
-  border: thin solid black;
+  border: thin solid red;
 `;
 
 export const ToolbarContainer = styled.div`
   display: flex;
   flex-direction: column;
   padding: 10px;
-  border: thin solid black;
+  border: thin solid orange;
 `;
 
 // ./src/components/Player.js
