@@ -1,16 +1,28 @@
 import React from "react";
 
-import { ToolbarContainer } from "./common-game";
+import { ToolbarContainer, ToolbarButton } from "./common-game";
 
-import { TwitterPicker } from "react-color";
+import { CompactPicker } from "react-color";
 
 export function Toolbar(props) {
+  function clearAll() {
+    console.log("Something");
+  }
+
+  function draw() {
+    console.log("Something");
+  }
+
+  function erase() {
+    console.log("Something");
+  }
+
   return (
     <ToolbarContainer>
-      <button>Draw</button>
-      <button>Erase</button>
-      <button>ColorPicker</button>
-      <TwitterPicker />
+      <ToolbarButton onClick={c => clearAll()}>Clear All</ToolbarButton>
+      <ToolbarButton onClick={e => draw()}>Draw</ToolbarButton>
+      <ToolbarButton onClick={d => erase()}>Eraser</ToolbarButton>
+      <CompactPicker />
     </ToolbarContainer>
   );
 }

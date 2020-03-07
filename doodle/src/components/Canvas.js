@@ -7,7 +7,7 @@ import { Toolbar } from "./Toolbar";
 export function Canvas(props) {
   const [drawing, setDrawing] = useState(false);
 
-  let canvasRefObject = useRef("nothing");
+  let canvasRefObject = useRef();
 
   function mouseMove(e) {
     if (!drawing) return;
@@ -18,7 +18,7 @@ export function Canvas(props) {
     context.lineCap = "round";
 
     const xPosition = e.clientX - rect.left;
-    const yPosition = e.clientY - 1;
+    const yPosition = e.clientY - rect.top;
 
     context.lineTo(xPosition, yPosition);
 
@@ -40,9 +40,7 @@ export function Canvas(props) {
 
   useEffect(() => {}, []);
 
-  useEffect(() => {
-    console.log("Drawing was changed to " + drawing);
-  }, [drawing]);
+  useEffect(() => {}, [drawing]);
 
   return (
     <CanvasContainer>

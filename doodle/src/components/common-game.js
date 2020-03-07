@@ -35,5 +35,19 @@ export const ToolbarContainer = styled.div`
   border: thin solid orange;
 `;
 
+export const ToolbarButton = styled.button`
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  margin: 2px;
+  width: 80px;
+  height: 50px;
+  border: thin solid orange;
+  :hover {
+    border: thin solid blue;
+  }
+  outline: none;
+`;
+
 // ./src/components/Player.js
 // Attempted import error: 'PlayerCard' is not exported from './common-game'.
