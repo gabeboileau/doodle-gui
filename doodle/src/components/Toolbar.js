@@ -22,7 +22,7 @@ export function Toolbar(props) {
       <ToolbarButton onClick={c => clearAll()}>Clear All</ToolbarButton>
       <ToolbarButton onClick={e => draw()}>Draw</ToolbarButton>
       <ToolbarButton onClick={d => erase()}>Eraser</ToolbarButton>
-      <CompactPicker />
+      {/* <CompactPicker /> */}
     </ToolbarContainer>
   );
 }

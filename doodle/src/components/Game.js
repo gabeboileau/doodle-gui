@@ -9,10 +9,10 @@ export function Game(props) {
   return (
     <GameContainer>
       <PlayerContainer>
-        <Player></Player>
-        <Player></Player>
-        <Player></Player>
-        <Player></Player>
+        <Player playerName="Gabe" points="100"></Player>
+        <Player playerName="Gabe" points="100"></Player>
+        <Player playerName="To me portal gun" points="100"></Player>
+        <Player playerName="Some Science" points="120"></Player>
       </PlayerContainer>
       <Canvas></Canvas>
     </GameContainer>

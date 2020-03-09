@@ -103,9 +103,9 @@ export function Canvas(props) {
         onMouseDown={e => beginDraw(e)}
         onMouseUp={e => endDraw(e)}
         onMouseLeave={e => endDraw(e)}
-        style={{
-          border: "thick solid purple"
-        }}
+        // style={{
+        //   border: "thin solid"
+        // }}
       ></canvas>
       <Toolbar />
     </CanvasContainer>
