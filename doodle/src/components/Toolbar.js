@@ -19,9 +19,13 @@ export function Toolbar(props) {
 
   return (
     <ToolbarContainer>
-      <ToolbarButton onClick={c => clearAll()}>Clear All</ToolbarButton>
+      <ToolbarButton onClick={c => clearAll()}>
+        <img width="40px" height="40px" src="../images/pencil.svg"></img>
+      </ToolbarButton>
       <ToolbarButton onClick={e => draw()}>Draw</ToolbarButton>
-      <ToolbarButton onClick={d => erase()}>Eraser</ToolbarButton>
+      <ToolbarButton onClick={d => erase()}>
+        <img width="40px" height="40px" src="../images/eraser.svg"></img>
+      </ToolbarButton>
       {/* <CompactPicker /> */}
     </ToolbarContainer>
   );

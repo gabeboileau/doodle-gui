@@ -9,7 +9,7 @@ export const GameContainer = styled.div`
 
 export const PlayerCard = styled.div`
   display: flex;
-  width: 150px;
+  width: 200px;
   margin: 5px;
   color: white;
 `;
@@ -19,14 +19,14 @@ export const PlayerContainer = styled.div`
   flex-direction: column;
   border: thin solid black;
   background-color: #4e4e50;
-  height: 500px;
+  height: 700px;
   width: 200px;
 `;
 
 export const CanvasContainer = styled.div`
   display: flex;
-  width: 700px;
-  height: 500px;
+  width: 1000px;
+  height: 700px;
   border: thin solid;
   background-color: white;
 `;
@@ -44,7 +44,7 @@ export const ToolbarButton = styled.button`
   justify-content: center;
   padding: 5px;
   margin: 2px;
-  width: 80px;
+  width: 50px;
   height: 50px;
   background-color: #6f2232;
   color: white;

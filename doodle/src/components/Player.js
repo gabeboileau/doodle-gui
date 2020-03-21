@@ -12,7 +12,7 @@ export function Player(props) {
         style={{
           display: "flex",
           flexDirection: "column",
-          margin: "2px 2px 2px 20px"
+          padding: "2px"
         }}
       >
         <label style={{ fontWeight: "bold" }}>{props.playerName}</label>

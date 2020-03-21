@@ -4,7 +4,7 @@ import { TopbarContainer, TopbarTitle } from "./common-game";
 export function Topbar(props) {
   return (
     <TopbarContainer>
-      <TopbarTitle>Hello</TopbarTitle>
+      <TopbarTitle>Doodle</TopbarTitle>
     </TopbarContainer>
   );
 }
