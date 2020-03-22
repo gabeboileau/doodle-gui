@@ -9,8 +9,15 @@ export const GameContainer = styled.div`
 
 export const PlayerCard = styled.div`
   display: flex;
-  width: 200px;
   margin: 5px;
+  height: 50px;
+  background: rgb(46, 45, 52);
+  background: linear-gradient(
+    90deg,
+    rgba(46, 45, 52, 1) 0%,
+    rgba(109, 109, 120, 1) 49%,
+    rgba(57, 73, 77, 1) 100%
+  );
   color: white;
 `;
 
@@ -18,15 +25,16 @@ export const PlayerContainer = styled.div`
   display: flex;
   flex-direction: column;
   border: thin solid black;
-  background-color: #4e4e50;
   height: 700px;
-  width: 200px;
+  width: 275px;
+  border-width: 1px 0px 1px 1px;
+  background-color: white;
 `;
 
 export const CanvasContainer = styled.div`
   display: flex;
-  width: 1000px;
   height: 700px;
+  min-width: 200px;
   border: thin solid;
   background-color: white;
 `;
@@ -35,36 +43,42 @@ export const ToolbarContainer = styled.div`
   display: flex;
   flex-direction: column;
   padding: 10px;
+  width: 100px;
   border: thin solid;
-  background-color: #4e4e50;
+  border-width: 0px 0px 0px 1px;
 `;
 
-export const ToolbarButton = styled.button`
+export const ToolbarButton = styled.div`
   display: flex;
   justify-content: center;
-  padding: 5px;
-  margin: 2px;
-  width: 50px;
-  height: 50px;
-  background-color: #6f2232;
+  width: 40px;
+  height: 40px;
+  background-color: #36899e;
   color: white;
-  border: thin solid;
   :hover {
-    border: thin solid blue;
+    background-color: #255e6c;
   }
-  outline: none;
+  align-items: center;
+  padding: 2px;
 `;
 
 export const TopbarContainer = styled.div`
-  background-color: #4e4e50;
   display: flex;
   height: 60px;
-  color: white;
   vertical-align: center;
+  background-color: #36899e;
+
+  /* background: linear-gradient(
+    90deg,
+    rgba(46, 45, 52, 1) 0%,
+    rgba(109, 109, 120, 1) 49%,
+    rgba(57, 73, 77, 1) 100%
+  ); */
+  color: white;
 `;
 
 export const TopbarTitle = styled.div`
-  font-size: 20px;
+  font-size: 30px;
   margin: 5px;
   align-self: center;
 `;
